@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devashree Kulkarni</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <button onclick="navigateTo('home')">Home</button>
+      <button onclick="navigateTo('about')">About</button>
+      <button onclick="navigateTo('education')">Education</button>
+      <button onclick="navigateTo('achievements')">Achievements</button>
+      <button onclick="navigateTo('skills')">Skills</button>
+      <button onclick="navigateTo('text-analyser')">Text Analyser</button>
+      <button onclick="navigateTo('cv')">CV</button>
+
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section">
+      <div class="home-content">
+        <img src="images/profile.jpeg" alt="Devashree" id="profile-pic" class="reveal-item">
+        <h1 class="reveal-item">Devashree Kulkarni</h1>
+        <p class="reveal-item">a tech enthusiast and a wanderer</p>
+    
+        <div class="social-icons reveal-item">
+          <a href="https://github.com/your-username" target="_blank">
+            <img src="images/github.png" alt="GitHub">
+          </a>
+          <a href="https://linkedin.com/in/your-username" target="_blank">
+            <img src="images/linkedin.png" alt="LinkedIn">
+          </a>
+          <a href="https://instagram.com/your-username" target="_blank">
+            <img src="images/instagram.png" alt="Instagram">
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    
+    <section id="about" class="section">
+      <div class="content-box about-text-box">
+        <p>
+          Hi! I'm <span class="highlighted-text">Devashree</span>, a passionate explorer of all things tech — especially <strong>computer science</strong>, always on the lookout for innovative ways to make life simpler and smarter through technology.<br><br>
+          Outside of coding and creating, I love <em>swimming</em>, playing <em>table tennis</em>, <em>travelling</em> to different places and getting lost in <em>music</em>. 🎵
+        </p>
+    
+        <h3 class="subheading">Place of Birth & Family</h3>
+        <div class="image-gallery">
+          <img src="images/family1.png" alt="Place of Birth">
+          <img src="images/place.jpg" alt="Family Photo 1">
+          <img src="images/family2.png" alt="Family Photo 2">
+        </div>
+      </div>
+    </section>
+    
+    
+    
+
+    <section id="education" class="section">
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3 class="edu-title">IIIT Hyderabad</h3>
+          <p class="edu-duration">2024 – Present</p>
+          <p class="edu-desc">Pursuing B.Tech + M.S. in Computer Science and Engineering.</p>
+        </div>
+        <div class="timeline-line"></div>
+    
+        <div class="timeline-item">
+          <h3 class="edu-title">Rahul International School</h3>
+          <p class="edu-duration">2022 – 2024 (11th & 12th Grade)</p>
+          <p class="edu-desc">Completed higher secondary education.</p>
+        </div>
+        <div class="timeline-line"></div>
+    
+        <div class="timeline-item">
+          <h3 class="edu-title">Carmel Convent High School, Badlapur</h3>
+          <p class="edu-duration">Till 2022 (Up to 10th Grade)</p>
+          <p class="edu-desc">Completed secondary education.</p>
+        </div>
+      </div>
+    </section>
+       
+    
+    <section id="text-analyser" class="section">
+      <div class="content-box">
+        <h2>Text Analyser</h2>
+          <h4>Enter text to analyse</h4>
+          <textarea id="inputText" placeholder="Type your text here..." rows="10"></textarea>
+
+        <br>
+        <button onclick="analyzeText()">Analyze Text</button>
+    
+        <div id="analysisResults" class="analysis-box">
+          <h3>Analysis Results</h3>
+    
+          <div class="analysis-group">
+            <h4>Basic Counts</h4>
+            <ul id="basicCounts"></ul>
+          </div>
+    
+          <div class="analysis-group">
+            <h4>Pronoun Counts</h4>
+            <ul id="pronounCounts"></ul>
+          </div>
+    
+          <div class="analysis-group">
+            <h4>Preposition Counts</h4>
+            <ul id="prepositionCounts"></ul>
+          </div>
+    
+          <div class="analysis-group">
+            <h4>Indefinite Article Counts</h4>
+            <ul id="articleCounts"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <section id="achievements" class="section">
+      <div class="achievements-box content-box">
+        <h2>Achievements</h2>
+        <ul class="achievements-list">
+          <li>Scored <strong>96%</strong> in 10th State Board and <strong>93.8%</strong> in 12th CBSE.</li>
+          <li>Secured <strong>AIR 24</strong> in the UGEE entrance examination.</li>
+          <li>Won a <strong>Gold Medal</strong> in the Homi Bhabha Young Scientists Exam.</li>
+          <li>Received the <strong>Maharashtra State Scholarship</strong> in 5th and 8th grade.</li>
+          <li>Secured <strong>1st place</strong> in the Science Quiz conducted by <strong>NMRL</strong> (Naval Materials Research Lab).</li>
+          <li>Won multiple medals in interschool <strong>oration and debate</strong> competitions.</li>
+        </ul>
+      </div>
+    </section>
+    
+    
+
+    <section id="skills" class="section">
+      <div class="skills">
+        <div class="skill-level" id="basic-skill">
+          <h3>Basic</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bash</li>
+
+            <li>MongoDB</li>
+          </ul>
+        </div>
+        <div class="skill-level" id="intermediate-skill">
+          <h3>Intermediate</h3>
+          <ul>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Arduino</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div class="skill-level" id="advanced-skill">
+          <h3>Advanced</h3>
+          <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>Pandas</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="cv" class="section">
+      <div class="content-box">
+        <h2>My CV</h2>
+        <p>You can view or download my CV below:</p>
+        <a href="assets/cv.pdf" download target="_blank">
+          <button class="cv-button">View My CV</button>
+        </a>
+          </div>
+    </section>
+    
+    
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
