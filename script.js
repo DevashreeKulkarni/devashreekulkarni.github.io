@@ -77,7 +77,7 @@ function analyzeText() {
   const symbols = (text.match(/[^\w\s]/g) || []).length;
 
   const pronouns = ['i', 'you', 'he', 'she', 'it', 'we', 'they', 'me', 'him', 'her', 'us', 'them', 'my', 'your', 'his', 'their'];
-  const prepositions = ['in', 'on', 'at', 'by', 'for', 'to', 'with', 'from', 'about', 'against', 'between', 'into', 'through', 'during', 'before', 'after'];
+  const prepositions = ['in', 'on', 'at', 'by', 'for', 'to', 'with', 'from', 'about','above','into','until','over','under','around','across','toward','as','below','inside','', 'against', 'between', 'into', 'through', 'during', 'before', 'after'];
   const articles = ['a', 'an'];
 
   const wordArray = text.toLowerCase().match(/\b\w+\b/g) || [];
